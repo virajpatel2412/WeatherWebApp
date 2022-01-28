@@ -1,0 +1,16 @@
+{
+  "name": "weatherwebapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js -e js,hbs,html,css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Viraj Padariya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "hbs": "^4.2.0",
+    "path": "^0.12.7"
+  }
+}

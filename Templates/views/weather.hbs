@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    {{>links}}
+    <link rel="stylesheet" href="/css/weather.css" />
+
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="mainbody">
+        <div class="navbar navbar-search navbar-dark bg-dark">
+            <form class="container-fluid" id="subform">
+                <div class="input-group">
+                    <input type="text" class="form-control input-city"
+                        placeholder="Enter your city name" name="cityname"
+                        aria-describedby="basic-addon1"
+                        id="cityname" autocomplete="off">
+                    <button type="submit" class='btn btn-primary' value='search' id="submitbtn">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="infocard container-fluid">
+        <div class="notfound">
+            <h3>Enter valid city name</h3>
+        </div>
+        <div class="cityinfo">
+            <i class="fas fa-street-view"></i>
+            <h3 class="address" id='cityval'></h3>
+            <h3 id="country" class="address"></h3>
+        </div>
+        <div class="tempinfo row">
+            <div class="temp col">
+                <h5> Long : <span id="lon"></span></h5>
+                <h5>lat : <span id="lat"></span> </h5>
+                <h5> Curr Temp : <span id="current_temp"></span> <span><sup>o</sup>C</span></h5>
+                <h5> Min Temp :  <span id="min_temp"></span> <span><sup>o</sup>C</span></h5>
+                <h5> Max Temp : <span id="max_temp"></span> <span><sup>o</sup>C</span></h5>
+            </div>
+            <div class="other_info col">
+                <h5> Pressure : <span id="pressure"></span></h5>
+                <h5> Humidity :  <span id="humidity"></span></h5>
+                <h5> Sea level : <span id="sealevel"></span></h5>
+                <h5> Ground level : <span id="groundlevel"></span></h5>
+            </div>
+        </div>
+
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>
+
+<script src="/js/main.js"></script>

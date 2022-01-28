@@ -1,0 +1,11 @@
+.errorimage{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(191, 149, 149, 0.816)), url('/pictures/404.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+.btndiv{
+    margin: auto;
+    transform: translateY(100px);
+}
